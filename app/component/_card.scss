@@ -16,12 +16,16 @@
             font-size: $base-font-size;
         }
         .card__link{
-            text-decoration:underline;
             display: inline-block;
             border:$base-border-thickness solid $clr-gray;
             padding:$base-padding;
             font-size: $base-font-size;
             margin:$base-margin;
+
+            &:hover{
+              background:$clr-black;
+              color:$clr-white;
+            }
         }
     }
 }

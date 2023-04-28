@@ -1,0 +1,21 @@
+{
+  "name": "scss-tuts",
+  "version": "1.0.0",
+  "description": "This is a scss tutorials for self learning",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "gauravgupta",
+  "license": "ISC",
+  "devDependencies": {
+    "gulp": "^4.0.2",
+    "gulp-sass": "^5.1.0",
+    "sass": "^1.62.1"
+  },
+  "dependencies": {
+    "browser-sync": "^2.29.1",
+    "cssnano": "^6.0.0",
+    "gulp-postcss": "^9.0.1"
+  }
+}

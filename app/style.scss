@@ -1,0 +1,56 @@
+// Newer syntax
+// @forward 'variables';
+// @forward 'base';
+
+
+// Variables and functions
+@import 'variables';
+
+// base and layouts
+@import 'base';
+
+// colors
+
+
+// Components (button, card, navbar )
+
+// utilities ( margin, padding, opacity )
+
+
+.container{
+     max-width:90%;
+     margin:0 auto;
+
+    h2{
+        color:$primary;
+    }
+    a{
+        color:$primary;
+    }
+    .error{
+        color:$error;
+        border:2px solid $error;
+        width: 200px;
+        height: 40px;
+    }
+    .notify{
+        color:$info;
+        border:2px solid $secondary;
+        padding: $base-padding;
+        width: 200px;
+        height: 40px;
+    }
+    button{
+        border:none;
+        color:$clr-white;
+        background:$primary;
+        padding: $base-padding;
+        margin: $base-margin;
+        border-radius: $base-border-radius;
+        -webkit-border-radius: $base-border-radius;
+        -moz-border-radius: $base-border-radius;
+        -ms-border-radius: $base-border-radius;
+        -o-border-radius: $base-border-radius;
+    }
+
+}

@@ -7,7 +7,7 @@ const browserSync = require('browser-sync').create();
 
 
 function scssTask(){
-    return src("style.scss", { sourcemaps: true})
+    return src("app/**/*.scss", { sourcemaps: true})
     .pipe(sass())
     .pipe(postcss([cssnano()]))
     .pipe(dest('dist', {sourcemaps:'.'}));
@@ -36,7 +36,7 @@ function browserSyncReload(cb){
 
 function watchTask(){
     watch("*.html" , browserSyncReload);
-    watch(['style.scss', 'script.js'], series(scssTask, browserSyncReload));
+    watch(['app/**/*.scss', 'js/**/*.js'], series(scssTask, browserSyncReload));
 }
 
 exports.default = series(scssTask, browserSyncServe, watchTask);

@@ -8,19 +8,18 @@
     max-width: 400px;
     border-radius: math.div($base-border-radius, 4);
 
-
-    .card__title{
+    &__title{
         font-size: $font-size-xl;
         padding-bottom: $base-padding;
         font-weight: bold;
 
     }
-    .card__body{
+    &__body{
         
-        .card__paragraph{
+        &__paragraph{
             font-size: $base-font-size;
         }
-        .card__link{
+        &__link{
             display: inline-block;
             border:$base-border-thickness solid $clr-gray;
             padding:$base-padding;

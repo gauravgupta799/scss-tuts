@@ -11,6 +11,11 @@
         .text-#{$key}-light-#{$i}{
             color:mix($clr-white, $val, $i * 10);
         }
+        .text-hover-#{$key}-light-#{$i}{
+            &:hover{
+                color:mix($clr-white, $val, $i * 10);
+            }
+        }
         .bg-#{$key}-light-#{$i}{
             background-color:mix($clr-white, $val, $i * 10);
         }
@@ -20,8 +25,20 @@
         .text-#{$key}-dark-#{$i}{
             color:mix($clr-black, $val, $i * 10);
         }
+        .text-hover-#{$key}-dark-#{$i}{
+            &:hover{
+                color:mix($clr-black, $val, $i * 10);
+            }
+        }
         .bg-#{$key}-dark-#{$i}{
             background-color:mix($clr-black, $val, $i * 10);
         }
     }
 }
+
+// conditional loop
+// @if($val != "black" and $val != "white"){
+//     // code block
+// }@else{
+//     //  
+// }
